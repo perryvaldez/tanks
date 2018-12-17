@@ -1,9 +1,14 @@
-﻿namespace Interfaces
+﻿using System;
+
+namespace Interfaces
 {
-    public delegate void EventType();
+    public class TickArgs
+    {
+        public ICanvas Canvas { get; set; }
+    }
 
     public interface ICanvasObject
     {
-        event EventType OnTick;
+        void OnTick(TickArgs args);
     }
 }

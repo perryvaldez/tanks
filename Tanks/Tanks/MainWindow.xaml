@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tanks"
         mc:Ignorable="d"
-        Title="Tanks" Height="900" Width="1536" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Tanks" Height="900" Width="1536" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <StackPanel>
         <Canvas x:Name="cvsCanvas" Height="824"></Canvas>
         <Grid x:Name="grdBottom" ShowGridLines="True" Height="42">
