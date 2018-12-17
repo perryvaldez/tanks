@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Tanks.Samples
 {
-    public class SampleTank : ICanvasObject
+    public class SampleTank : ITank
     {
         public void OnTick(TickArgs args)
         {

@@ -32,10 +32,14 @@ namespace Tanks
 
         private void GlobalTimer_Tick(object sender, EventArgs e)
         {
+            var win = (MainWindow) Application.Current.MainWindow;
+            ObjectRenderer renderer = new ObjectRenderer(win.cvsCanvas);
+
             foreach (var obj in this.CanvasObjects)
             {
                 var args = new TickArgs();
                 obj.OnTick(args);
+                renderer.Render(obj);
             }
         }
     }
