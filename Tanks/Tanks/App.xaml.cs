@@ -32,16 +32,9 @@ namespace Tanks
 
         private void GlobalTimer_Tick(object sender, EventArgs e)
         {
-            var win = (MainWindow) Application.Current.MainWindow;
             foreach (var obj in this.CanvasObjects)
             {
                 var args = new TickArgs();
-
-                if (win != null)
-                {
-                    args.Canvas = new CanvasWrapper(win.cvsCanvas);
-                }
-
                 obj.OnTick(args);
             }
         }

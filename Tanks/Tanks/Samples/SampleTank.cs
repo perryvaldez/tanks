@@ -12,10 +12,7 @@ namespace Tanks.Samples
     {
         public void OnTick(TickArgs args)
         {
-            if (args.Canvas != null)
-            {
-                Debug.WriteLine("Test");
-            }
+            Debug.WriteLine("Test");
         }
     }
 }
