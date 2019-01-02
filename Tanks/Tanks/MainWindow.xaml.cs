@@ -20,6 +20,8 @@ namespace Tanks
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool isStopped = true;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -33,7 +35,28 @@ namespace Tanks
 
         private void BtnStartStop_Click(object sender, RoutedEventArgs e)
         {
+            if (isStopped)
+            {
+                btnStartStop.Content = "Stop";
+                isStopped = false;
+                StartSimulation();
+            } else
+            {
+                btnStartStop.Content = "Start";
+                isStopped = true;
+                StopSimulation();
+            }
+        }
+
+        private void StartSimulation()
+        {
 
         }
+
+        private void StopSimulation()
+        {
+
+        }
+
     }
 }
