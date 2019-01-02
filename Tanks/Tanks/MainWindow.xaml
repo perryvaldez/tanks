@@ -15,6 +15,9 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
+                <Button x:Name="btnStartStop" Width="96" Height="30" Margin="4,0,0,0" Click="BtnStartStop_Click">Start</Button>
+            </StackPanel>
         </Grid>
     </StackPanel>
 </Window>

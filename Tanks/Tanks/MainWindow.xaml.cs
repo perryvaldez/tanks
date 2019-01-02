@@ -30,5 +30,10 @@ namespace Tanks
             App currentApp = (App)Application.Current;
             
         }
+
+        private void BtnStartStop_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
